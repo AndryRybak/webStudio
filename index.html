@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/iconsfont.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+
+  <body>
+    <!-- header************************************************************* -->
+    <header class="header">
+      <div class="container header-container">
+        <nav class="site-nav">
+          <a class="logo link" href="./" lang="en">Web<span
+              class="logo-studio-header">Studio</span> </a>
+          <ul class="header-nav-list list">
+            <li class="header-nav-item "><a class="link header-nav-link current"
+                href="">Студия</a></li>
+            <li class="header-nav-item"><a class="link header-nav-link"
+                href="./portfolio.html">Портфолио</a></li>
+            <li class="header-nav-item"><a class="link header-nav-link" href="">Kонтакты</a></li>
+          </ul>
+        </nav>
+        <ul class="auth-nav list">
+          <li class="item">
+            <a class="header-nav-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a class="header-nav-phone" href="tel:+38096111111">+38 096 111
+              11 11</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- hero ******************************************************** -->
+      <section class="hero">
+        <div class="container">
+        <h1 class="hero-tittle">Эффективные решения <br> для вашего бизнеса</h1>
+        <button data-open-modal class="hero-button" type="button">Заказать услугу</button>
+          <div class="backdrop is-hidden" databackdrop>
+            <div class="modal">
+              <h2>Оставьте свои данные, мы вам <br> перезвоним</h2>
+              <form class="form">
+                <label class="form-field">
+                  <input type="text" class="form-input" name="name" placeholder=" " />
+                  <span class="form-label">Имя</span>
+                  <span class="icon"><a href="" class="icon-user-black"></a></span>
+                </label>
+                <label class="form-field">
+                  <input type="tel" class="form-input" name="tel" placeholder=" " />
+                  <span class="form-label">Телефон</span>
+                  <span class="icon"><a href="" class="icon-phone-black"></a></span>
+                </label>
+                <label class="form-field">
+                  <input type="email" class="form-input" name="mail" placeholder=" " />
+                  <span class="form-label">Почта</span>
+                  <span class="icon"><a href="" class="icon-email-black"></a>
+                  </span>
+                </label>
+                <div class="comment-textarea">
+                  <p class="comment-title">Коммертарий</p>
+                <label for="comment" class="form-field">
+                <textarea class="form-input"name="" id="comment" cols="30" rows="10" placeholder="введите коментарий"></textarea>
+                </label></div>
+                <div class="checkbox-policy">
+                <label class="label-checkbox" ><span class="icon-checkbox"></span>
+                  <input class="checkbox" type="checkbox" name="policy" value="policy" />Соглашаюсь с рассылкой и <a href=""> принимаю Условия договора</a>
+                  
+                </label></div>
+              <ul class="button-menu">
+                <li><button type="submit" class="button-modal">Отправить</button></li>
+                <li><button data-close-modal type="submit" class="button-modal">закрыть</button></li>
+            </ul>
+            </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <ul class="list about-list">
+            <li class="about-list-item icon-detail">
+              <h3 class="about-item-tittle">Внимание к деталям</h3>
+              <p class="about-item-text">Идейные соображения, а также начало
+                повседневной работы по формированию позиции.</p>
+            </li>
+            <li class="about-list-item icon-time">
+              <h3 class="about-item-tittle">Пунктуальность</h3>
+              <p class="about-item-text">Задача организации, в особенности же
+                рамки и место обучения кадров влечет за собой.</p>
+            </li>
+            <li class="about-list-item icon-plan">
+              <h3 class="about-item-tittle">Планирование</h3>
+              <p class="about-item-text">Равным образом консультация с широким
+                активом в значительной степени обуславливает.</p>
+            </li>
+            <li class="about-list-item icon-tehnology">
+              <h3 class="about-item-tittle">Современные технологии </h3>
+              <p class="about-item-text">Значимость этих проблем настолько
+                очевидна, что реализация плановых заданий.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- "what-we-do"*************************************************** -->
+      <section class="what-we-do">
+        <div class="container">
+          <h2 class="section-tittle">Чем мы занимаемся</h2>
+          <ul class="list__what-we-do">
+            <li class="what-we-do__item">
+              <div class="item-app"><p class="item-app__text"
+                >десктопные приложения</p></div><img src="./img/box1.jpg"
+                alt="написание кода"></li>
+            <li class="what-we-do__item"><div class="item-app"><p class="item-app__text"
+              >мобильные приложения</p></div><img src="./img/box2.jpg"
+            alt="разработка мобильного приложения"></li>
+            <li class="what-we-do__item"><div class="item-app"><p class="item-app__text"
+              >дизайнерские решения</p></div><img src="./img/box3.jpg" alt="выбор
+            цвета из цветовой палитры"></li>
+          </ul>
+        </div>
+      </section>
+      <!-- our-team*********************************************** -->
+      <section class="our-team">
+        <div class="container">
+          <h2 class="team-tittle">Наша команда</h2>
+          <ul class="list__our-team">
+            <li class="our-team-item">
+              <img src="./img/teamcard1.jpg" alt="Product Designer Игорь
+                Демьяненко" width="270" height="260">
+              <h3 class="our-team-tittle">Игорь Демьяненко</h3>
+              <p class="our-team-text">Product Designer</p>
+              <ul class="social-team">
+                <li class="icon-social">
+                  <a href="" class="icon-instagram"></a></li>
+                <li class="icon-social">
+                  <a href="" class="icon-twitter"></a></li>
+                <li class="icon-social">
+                  <a href="" class="icon-facebook"></a></li>
+                <li class="icon-social">
+                  <a href="" class="icon-linkedin"></a></li>
+              </ul>
+            </li>
+            <li class="our-team-item">
+              <img src="./img/teamcard2.jpg" alt="Frontend Developer Ольга
+                Репина" width="270" height="260">
+              <h3 class="our-team-tittle">Ольга Репина</h3>
+              <p class="our-team-text">Frontend Developer</p>
+              <ul class="social-team">
+                <li class="icon-social">
+                  <a href="" class="icon-instagram"></a></li>
+                <li class="icon-social">
+                  <a href="" class="icon-twitter"></a></li>
+                <li class="icon-social">
+                  <a href="" class="icon-facebook"></a></li>
+                <li class="icon-social">
+                  <a href="" class="icon-linkedin"></a></li>
+              </ul>
+            </li>
+            <li class="our-team-item">
+              <img src="./img/teamcard3.jpg" alt="Marketing Николай Тарасов"
+                width="270" height="260">
+              <h3 class="our-team-tittle">Николай Тарасов</h3>
+              <p class="our-team-text">Marketing</p>
+              <ul class="social-team">
+                <li class="icon-social">
+                  <a href="" class="icon-instagram"></a></li>
+                <li class="icon-social">
+                  <a href="" class="icon-twitter"></a></li>
+                <li class="icon-social">
+                  <a href="" class="icon-facebook"></a></li>
+                <li class="icon-social">
+                  <a href="" class="icon-linkedin"></a></li>
+              </ul>
+            </li>
+            <li class="our-team-item">
+              <img src="./img/teamcard4.jpg" alt="Ul Designer Михаил Ермаков"
+                width="270" height="260">
+              <h3 class="our-team-tittle">Михаил Ермаков</h3>
+              <p class="our-team-text">Ul Designer</p>
+              <ul class="social-team">
+                <li class="icon-social">
+                  <a href="" class="icon-instagram"></a></li>
+                <li class="icon-social">
+                  <a href="" class="icon-twitter"></a></li>
+                <li class="icon-social">
+                  <a href="" class="icon-facebook"></a></li>
+                <li class="icon-social">
+                  <a href="" class="icon-linkedin"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--**************************clients*****************-->
+      </section>
+      <section class="clients">
+        <div class="container">
+          <h2 class="clients-title">Постоянные клиенты</h2>
+          <ul class="clients-regular">
+            <li class="button-client"><button class="icon-group1"></button></li>
+            <li class="button-client"><button class="icon-Object2"></button></li>
+            <li class="button-client"><button class="icon-Object3"></button></li>
+            <li class="button-client"><button class="icon-Object4"></button></li>
+            <li class="button-client"><button class="icon-Object5"></button></li>
+            <li class="button-client"><button class="icon-Object6"></button></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- footer********************************************************** -->
+    <footer class="footer">
+      <div class="container containeer-footer">
+        <div class="contacts">
+            <a class="logo link logo-footer" href="/" lang="en">Web<span class="logo-studio-footer">Studio</span> </a>
+            <address>
+                <ul class="list">
+                    <li class="footer-adress-item">
+                        <a class="link footer-adress-link" href="https://goo.gl/maps/KT7HjBjqopd9bMn17" target="_blank"
+                            rel="noopener noreferrer">г. Киев,
+                            пр-т Леси Украинки, 26</a>
+            
+                    </li>
+                    <li class="footer-adress-item">
+                        <a class="link footer-adress-link " href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="footer-adress-item">
+                        <a class="link footer-adress-link " href="tel:+380991111111">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+        <div class="join-us">
+            <h3 class="join-us-tittle">Присоединяйтесь</h3>
+            <ul class="social-list list">
+              <li class="icon-social">
+                <a href="" class="icon-instagram"></a></li>
+              <li class="icon-social">
+                <a href="" class="icon-twitter"></a></li>
+              <li class="icon-social">
+                <a href="" class="icon-facebook"></a></li>
+              <li class="icon-social">
+                <a href="" class="icon-linkedin"></a></li>
+            </ul>
+        </div>
+        <div class="subscription">
+          <h3 class="join-us-tittle">Подпишитесь на рассылку</h3>
+          <div class="subscription-form">
+          <label class="form-field">
+            <input type="email" class="form-input" name="mail" placeholder="email" />
+            <span class="form-label"></span>
+            <span class="icon"><a href="" class="icon-email-black"></a>
+            </span>
+          </label>
+          <button data-open-modal class="subscription-button" type="button">
+            подписаться
+          </button></div>
+        </div>
+    </div>
+  </footer>
+    <!-- скрипт для мадалки -->
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector('[data-open-modal]'),
+        closeModalBtn:document.querySelector('[data-close-modal]'),
+        backdrop: document.querySelector('[databackdrop]'),
+      };
+      refs.openModalBtn.addEventListener('click', toggleModal);
+      refs.closeModalBtn.addEventListener('click', toggleModal);
+      refs.backdrop.addEventListener('click', logBackdropClick);
+
+      function toggleModal() {
+        document.body.classList.toggle("modal-open");
+        refs.backdrop.classList.toggle('is-hidden');
+      }
+    </script>
+    <!-- скрипт для форм -->
+    <script>
+      (() => {
+        document
+        .querySelector('.js-seaker-form')
+        .addEventListener('submit', e => {
+          e.preventDefault();
+          new FormData(e.currentTarget).forEach((value, name) =>
+          console.log('${name}: ${value}'),
+          );
+          
+          e.currentTarget.reset();
+      });
+      });
+    </script>
+    
+  </body>
+
+</html>
